@@ -58,4 +58,9 @@ if selected_column:
 st.write("### Data Types of the Columns:")
 st.write(df.dtypes)
 
-
+st.download_button(
+    label="Download Dataset",
+    data=df.to_csv(index=False).encode('utf-8'),
+    file_name='spotify-2023.csv',
+    mime='text/csv'
+)
