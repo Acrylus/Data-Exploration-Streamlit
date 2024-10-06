@@ -13,8 +13,7 @@ st.write(
     This chart displays the positions of the top 10 streamed music tracks across various platforms, 
     including Spotify, Apple Music, Deezer, and Shazam. Each line represents a track, and the markers 
     indicate its respective position on each platform's chart. A lower position number signifies a 
-    higher ranking on the charts. This visualization allows you to compare how different tracks perform 
-    across multiple music platforms, providing insight into their popularity and reach in the music industry. 
+    higher ranking on the charts.
     """
 )
 
