@@ -8,7 +8,12 @@ df = load_data()
 # Set page title
 st.title('JolliBini: Dataset Introduction')
 
-# Display the full dataset
+st.write("""Welcome, this is our Streamlit app. Our app showcase the top Spotify tracks of 2023 
+        while providing charts that helps us understand the trends and patterns in the music industry.
+        The charts that will be shown will provide insights on the most popular tracks, artists and unique attributes 
+        that enables us to analyze and compare song performance across different platforms like Spotify, Apple Music and Deezer.
+        """)
+
 st.write("### Full Dataset:")
 st.dataframe(df, height=500)
 
