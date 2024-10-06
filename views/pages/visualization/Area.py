@@ -44,9 +44,9 @@ for track in chart_data.index:
     ))
 
 fig.update_layout(
-    title="Top 10 Tracks' Chart Positions Across Platforms",
+    title="Ranking Across Platforms",
     xaxis_title="Platform",
-    yaxis_title="Chart Position (lower is better)",
+    yaxis_title="Ranking",
     yaxis=dict(autorange='reversed'),
 )
 

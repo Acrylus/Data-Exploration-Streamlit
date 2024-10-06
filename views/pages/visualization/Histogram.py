@@ -38,7 +38,7 @@ for attribute in attributes:
     ))
 
 fig.update_layout(
-    title="Top 10 Tracks' Attributes",
+    title="Attributes Percentage",
     xaxis_title="Percentage",
     yaxis_title="Track Name",
     barmode='group',
@@ -46,5 +46,4 @@ fig.update_layout(
     yaxis={'categoryorder': 'total ascending'},
 )
 
-st.subheader("Top 10 Tracks' Attributes (Grouped by Track Name)")
 st.plotly_chart(fig, use_container_width=True)

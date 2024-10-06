@@ -26,18 +26,17 @@ scatter_data = top_tracks.melt(id_vars=['track name'],
                                 value_name='Streams')
 
 fig = px.scatter(scatter_data, 
-                 x='track name',
-                 y='Streams', 
+                 x='Track Name',
+                 y='Number of Playlist', 
                  color='Playlist',
-                 title='Top 10 Tracks by Playlist',
+                 title='Number of Playlist per Platform',
                  labels={'track name': 'Track Name', 'Streams': 'Streams'},
                  hover_data=['Playlist', 'Streams'])
 
 fig.update_traces(marker=dict(size=10))
 
-fig.update_layout(yaxis_title='Streams',
+fig.update_layout(yaxis_title='Number of Playlist',
                   xaxis_title='Track Name',
                   legend_title='Playlist')
 
-st.subheader("Top 10 Tracks Scatter Plot by Playlist")
 st.plotly_chart(fig, use_container_width=True)

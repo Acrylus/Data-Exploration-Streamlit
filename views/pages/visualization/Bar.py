@@ -33,12 +33,11 @@ for i in range(len(top_tracks)):
     ))
 
 fig.update_layout(
-    title="Top 10 Tracks' BPM",
+    title="BPM of Top 10 Streamed tracks",
     xaxis_title="Track Name",
     yaxis_title="BPM",
     yaxis=dict(tickformat='.1f'),
     xaxis={'categoryorder': 'total ascending'},
 )
 
-st.subheader("Top 10 Tracks' BPM (Grouped by Track Name)")
 st.plotly_chart(fig, use_container_width=True)
