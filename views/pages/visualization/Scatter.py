@@ -26,12 +26,13 @@ scatter_data = top_tracks.melt(id_vars=['track name'],
                                 value_name='Streams')
 
 fig = px.scatter(scatter_data, 
-                 x='Track Name',
-                 y='Number of Playlist', 
+                 x='track name',
+                 y='Streams',
                  color='Playlist',
-                 title='Number of Playlist per Platform',
+                 title='Number of Streams per Playlist Platform',
                  labels={'track name': 'Track Name', 'Streams': 'Streams'},
                  hover_data=['Playlist', 'Streams'])
+
 
 fig.update_traces(marker=dict(size=10))
 
