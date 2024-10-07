@@ -36,7 +36,7 @@ pages = {
         st.Page("views/pages/Statistics.py", title="Statistics", icon=":material/legend_toggle:"),
     ],
     "Visualization": [
-        st.Page("views/pages/visualization/Area.py", title="Area", icon=":material/ssid_chart:"),
+        st.Page("views/pages/visualization/Line.py", title="Line", icon=":material/ssid_chart:"),
         st.Page("views/pages/visualization/Histogram.py", title="Histogram", icon=":material/analytics:"),
         st.Page("views/pages/visualization/Bar.py", title="Bar", icon=":material/bar_chart:"),
         #st.Page("views/pages/visualization/Table.py", title="Table", icon=":material/table_chart:"),
