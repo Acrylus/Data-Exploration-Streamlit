@@ -5,7 +5,7 @@ from Main import load_data
 
 df = load_data()
 
-st.title("Area")
+st.title("Line")
 st.subheader("Top 10 streamed music - Ranking of each platform")
 
 st.write(
